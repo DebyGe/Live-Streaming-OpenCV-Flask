@@ -1,5 +1,13 @@
-# Live-Streaming-using-OpenCV-Flask
+# Live-Streaming-OpenCV-Flask
 A Flask Web-App to stream live from local webcam or CCTV (rtsp link)
+
+## Doker
+
+### Build DockerFile
+``` sudo docker build -t video-stream-cv . ```
+
+### Run Docker Container
+``` sudo docker run --device /dev/video0:/dev/video0 --net=host --name VideoStreem -p 5000:5000 video-stream-cv ```
 
 ## Use Built-in Webcam of Laptop
 
